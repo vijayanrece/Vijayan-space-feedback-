@@ -32,6 +32,10 @@ body{
   background-color: #00cbca;
 }
 
+#background-stats-3{
+  background-color: #808000;
+}
+
 #content-container{
   z-index:2;
   position:relative;
@@ -39,7 +43,7 @@ body{
   display:table;
   padding:10px;
   max-width:940px;
-  height:100%;
+  height:50%;
 }
 #content-container-center{
   display:table-cell;
@@ -52,9 +56,9 @@ body{
   bottom: 40px;
   right: 20px;
   color: #fff;
-  opacity: 0.5;
-  font-size: 45px;
-  font-weight: 600;
+  opacity: 1;
+  font-size: 10px;
+  font-weight: 300;
 }
 #choice{
   transition: all 300ms linear;
@@ -65,7 +69,7 @@ body{
   font-size:40px;
   font-weight: 600;
   width: 450px;
-  height: 200px;
+  height: 50px;
 }
 #choice a{
   text-decoration:none;
@@ -97,6 +101,12 @@ body{
   color: #2196f3;
   float: left;
 }
+
+#choice .choice.others{
+  color: #808000;
+  float: left;
+}
+
 #background-stats{
   z-index:1;
   height:100%;
