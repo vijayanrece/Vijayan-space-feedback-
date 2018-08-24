@@ -6,9 +6,9 @@ var bg2 = document.getElementById('background-stats-2');
 var bg3 = document.getElementById('background-stats-3');
 
 app.controller('statsCtrl', function($scope){
-  $scope.aPercent = 50;
-  $scope.bPercent = 50;
-  $scope.cPercent = 50;
+  $scope.aPercent = 0;
+  $scope.bPercent = 0;
+  $scope.cPercent = 0;
 
   var updateScores = function(){
     socket.on('scores', function (json) {
@@ -49,7 +49,7 @@ function getPercentages(a, b, c) {
     result.b = Math.round(b / (a + b + c) * 100);
     result.c = 100 - result.a - result.b;
   } else {
-    result.a = result.b = result.c = 50;
+    result.a = result.b = result.c = 0;
   }
 
   return result;
